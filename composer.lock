@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4e03f03450ec9d62706ea6b985a33c7",
+    "content-hash": "f64da230e7d17fc24d792ef68fb57914",
     "packages": [
         {
             "name": "brick/math",
@@ -3043,18 +3043,160 @@
             "time": "2023-04-15T23:01:58+00:00"
         },
         {
-            "name": "s4mpp/laraguard",
-            "version": "v1.0.1",
+            "name": "s4mpp/admin-panel",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/s4mpp/laraguard.git",
-                "reference": "f4146b503f1eccc22de525297f9861479855d6a8"
+                "url": "https://github.com/s4mpp/admin-panel.git",
+                "reference": "18fef22c3efd51fe412b3e8c6a575a0bc8fcdd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s4mpp/laraguard/zipball/f4146b503f1eccc22de525297f9861479855d6a8",
-                "reference": "f4146b503f1eccc22de525297f9861479855d6a8",
+                "url": "https://api.github.com/repos/s4mpp/admin-panel/zipball/18fef22c3efd51fe412b3e8c6a575a0bc8fcdd44",
+                "reference": "18fef22c3efd51fe412b3e8c6a575a0bc8fcdd44",
                 "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.10",
+                "php": "^8.1",
+                "s4mpp/element": "^1.0",
+                "s4mpp/input": "^1.0",
+                "s4mpp/laraguard": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\AdminPanel\\Providers\\AdminPanelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\AdminPanel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel Pacheco",
+                    "email": "S4mpp.dev@gmail.com"
+                }
+            ],
+            "description": "Admin Panel for Laravel apps",
+            "support": {
+                "issues": "https://github.com/s4mpp/admin-panel/issues",
+                "source": "https://github.com/s4mpp/admin-panel/tree/v1.0.4"
+            },
+            "time": "2023-08-06T17:37:00+00:00"
+        },
+        {
+            "name": "s4mpp/element",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/element.git",
+                "reference": "33d3d0a501fe4ac47e9274ed552688dc7051b548"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/element/zipball/33d3d0a501fe4ac47e9274ed552688dc7051b548",
+                "reference": "33d3d0a501fe4ac47e9274ed552688dc7051b548",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.10",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\Element\\Providers\\ElementServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\Element\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel Pacheco",
+                    "email": "S4mpp.dev@gmail.com"
+                }
+            ],
+            "description": "View components for Laravel",
+            "support": {
+                "issues": "https://github.com/s4mpp/element/issues",
+                "source": "https://github.com/s4mpp/element/tree/v1.0.0"
+            },
+            "time": "2023-08-06T03:01:40+00:00"
+        },
+        {
+            "name": "s4mpp/input",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/input.git",
+                "reference": "131cc238a7f2eb3e3d26a2252bf8aec80a86f0b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/input/zipball/131cc238a7f2eb3e3d26a2252bf8aec80a86f0b1",
+                "reference": "131cc238a7f2eb3e3d26a2252bf8aec80a86f0b1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.10",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\Input\\Providers\\InputServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\Input\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel Pacheco",
+                    "email": "S4mpp.dev@gmail.com"
+                }
+            ],
+            "description": "Input components for Laravel",
+            "support": {
+                "issues": "https://github.com/s4mpp/input/issues",
+                "source": "https://github.com/s4mpp/input/tree/v1.0.0"
+            },
+            "time": "2023-08-06T03:00:33+00:00"
+        },
+        {
+            "name": "s4mpp/laraguard",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/laraguard.git",
+                "reference": "4976eb5610336a05894bc8a0f07012a04c54dad1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/laraguard/zipball/4976eb5610336a05894bc8a0f07012a04c54dad1",
+                "reference": "4976eb5610336a05894bc8a0f07012a04c54dad1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.10",
+                "php": "^8.1"
             },
             "type": "library",
             "extra": {
@@ -3079,9 +3221,9 @@
             "description": "Authentication and Password Management for Laravel",
             "support": {
                 "issues": "https://github.com/s4mpp/laraguard/issues",
-                "source": "https://github.com/s4mpp/laraguard/tree/v1.0.1"
+                "source": "https://github.com/s4mpp/laraguard/tree/v1.0.2"
             },
-            "time": "2023-08-06T00:50:31+00:00"
+            "time": "2023-08-06T04:16:10+00:00"
         },
         {
             "name": "symfony/console",
@@ -5996,31 +6138,31 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.4",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "d1413755e26fe56a63455f7753221c86cbb88f66"
+                "reference": "68782e943f9ffcbc72bda08aedabe73fecb50041"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/d1413755e26fe56a63455f7753221c86cbb88f66",
-                "reference": "d1413755e26fe56a63455f7753221c86cbb88f66",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/68782e943f9ffcbc72bda08aedabe73fecb50041",
+                "reference": "68782e943f9ffcbc72bda08aedabe73fecb50041",
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "^2.0.1",
                 "lib-pcre": ">=7.0",
-                "php": ">=7.4,<8.3"
+                "php": ">=7.3"
             },
             "conflict": {
                 "phpunit/phpunit": "<8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5 || ^9.3",
+                "phpunit/phpunit": "^8.5 || ^9.6.10",
                 "psalm/plugin-phpunit": "^0.18.4",
                 "symplify/easy-coding-standard": "^11.5.0",
-                "vimeo/psalm": "^5.13.1"
+                "vimeo/psalm": "^4.30"
             },
             "type": "library",
             "autoload": {
@@ -6077,7 +6219,7 @@
                 "security": "https://github.com/mockery/mockery/security/advisories",
                 "source": "https://github.com/mockery/mockery"
             },
-            "time": "2023-07-19T15:51:02+00:00"
+            "time": "2023-08-06T00:30:34+00:00"
         },
         {
             "name": "myclabs/deep-copy",
