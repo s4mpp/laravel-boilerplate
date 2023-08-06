@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-$font-family-sans-serif: 'Inter', sans-serif;
+// $font-family-sans-serif: 'Inter', sans-serif;
 
 $gray-100: #f1f5f9;
 $gray-200: #e2e8f0;
@@ -16,9 +16,10 @@ $gray-900: #0f172a;
 // $green: #16a34a;
 // $orange: #ffa900;
 
+$blue: #0d6efd;
+
 $primary: $blue;
 
-$warning: $orange;
 $secondary: $gray-300;
 
 $min-contrast-ratio: 3;
