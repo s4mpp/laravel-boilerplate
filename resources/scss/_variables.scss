@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+$font-family-sans-serif: 'Inter', sans-serif;
+
+$gray-100: #f1f5f9;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e1;
+$gray-400: #94a3b8;
+$gray-500: #64748b;
+$gray-600: #475569;
+$gray-700: #334155;
+$gray-800: #1e293b;
+$gray-900: #0f172a;
+
+// $red: #dc2626;
+// $green: #16a34a;
+// $orange: #ffa900;
+
+$primary: $blue;
+
+$warning: $orange;
+$secondary: $gray-300;
+
+$min-contrast-ratio: 3;
+
+$input-btn-focus-width: 0rem;
+$table-cell-vertical-align: middle;
+$alert-border-width: 0;
+
+$input-btn-border-width: 2px;
+$input-border-color: $gray-300;
+$input-focus-border-color: $primary;
+
+$enable-negative-margins: true;
+$table-border-color: $gray-200;
+
+$table-border-color: #e2e8f0;
