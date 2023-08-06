@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbe4e9c9900c67b2a73d069eeea21afc",
+    "content-hash": "c4e03f03450ec9d62706ea6b985a33c7",
     "packages": [
         {
             "name": "brick/math",
@@ -3041,6 +3041,47 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "s4mpp/laraguard",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/laraguard.git",
+                "reference": "f4146b503f1eccc22de525297f9861479855d6a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/laraguard/zipball/f4146b503f1eccc22de525297f9861479855d6a8",
+                "reference": "f4146b503f1eccc22de525297f9861479855d6a8",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\Laraguard\\Providers\\LaraguardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\Laraguard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel Pacheco",
+                    "email": "S4mpp.dev@gmail.com"
+                }
+            ],
+            "description": "Authentication and Password Management for Laravel",
+            "support": {
+                "issues": "https://github.com/s4mpp/laraguard/issues",
+                "source": "https://github.com/s4mpp/laraguard/tree/v1.0.1"
+            },
+            "time": "2023-08-06T00:50:31+00:00"
         },
         {
             "name": "symfony/console",
