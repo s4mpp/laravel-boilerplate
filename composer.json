@@ -47,7 +47,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan vendor:publish --tag=admin-provider --tag=admin-assets --ansi --force",
+            "@php artisan vendor:publish --tag=admin-provider --tag=admin-user-resource --tag=admin-assets --ansi --force",
             "npm install",
             "npm run build"
         ]
