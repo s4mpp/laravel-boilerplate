@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f64da230e7d17fc24d792ef68fb57914",
+    "content-hash": "a5375052a9780466e24beb3a3b28e10b",
     "packages": [
         {
             "name": "brick/math",
@@ -3179,6 +3179,51 @@
                 "source": "https://github.com/s4mpp/input/tree/v1.0.0"
             },
             "time": "2023-08-06T03:00:33+00:00"
+        },
+        {
+            "name": "s4mpp/laragenius",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/laragenius.git",
+                "reference": "18395ece3f2368d630e6f79caca693a72f3d97eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/laragenius/zipball/18395ece3f2368d630e6f79caca693a72f3d97eb",
+                "reference": "18395ece3f2368d630e6f79caca693a72f3d97eb",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.10",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\Laragenius\\Providers\\LarageniusServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\Laragenius\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Samuel Pacheco",
+                    "email": "S4mpp.dev@gmail.com"
+                }
+            ],
+            "description": "Gerador de recursos para Laravel",
+            "support": {
+                "issues": "https://github.com/s4mpp/laragenius/issues",
+                "source": "https://github.com/s4mpp/laragenius/tree/v1.0.1"
+            },
+            "time": "2023-08-09T04:09:24+00:00"
         },
         {
             "name": "s4mpp/laraguard",

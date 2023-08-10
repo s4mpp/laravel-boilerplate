@@ -9,7 +9,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "s4mpp/admin-panel": "^1.0.1"
+        "s4mpp/admin-panel": "^1.0",
+        "s4mpp/laragenius": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -39,15 +40,15 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan vendor:publish --tag=admin-assets --ansi --force"
+            "@php artisan vendor:publish --tag=laravel-assets --ansi",
+            "@php artisan vendor:publish --tag=admin-assets --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan vendor:publish --tag=admin-provider --tag=admin-user-resource --tag=admin-assets --ansi --force",
+            "@php artisan vendor:publish --tag=admin-provider --tag=admin-user-resource --tag=admin-assets --ansi",
             "npm install",
             "npm run build"
         ]
