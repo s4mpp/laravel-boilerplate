@@ -1,3 +1,2 @@
 import './bootstrap';
-import './admin';
-import 'buttons-bs-loading'
+//import 'buttons-bs-loading'
