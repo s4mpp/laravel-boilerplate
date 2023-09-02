@@ -1,6 +1,6 @@
 @extends('errors::minimal')
 
-@section('title', 'EM MANUTENÇÃO')
+@section('title', 'Em manutenção')
 @section('code', '503')
 
 

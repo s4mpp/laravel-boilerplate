@@ -1,25 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-const tailwindColors = []
-
-const colorSafeList = []
-for (const colorName in tailwindColors)
-{
-  const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-
-  const pallette = tailwindColors[colorName]
-
-  if (typeof pallette === "object")
-  {
-    shades.forEach((shade) => {
-      if (shade in pallette) {
-        colorSafeList.push(`text-${colorName}-${shade}`)
-        colorSafeList.push(`bg-${colorName}-${shade}`)
-      }
-    })
-  }
-}
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -30,7 +10,6 @@ module.exports = {
     "./resources/**/*.js",
     "./resources/**/*.vue",
   ],
-  safelist: colorSafeList,
   darkMode: 'class',
   theme: {
     extend: {
