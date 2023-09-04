@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b37c094cc37e00ef35a936e7ece14ff5",
+    "content-hash": "93adac03ffc0bf21e7bc9b868056ce12",
     "packages": [
         {
             "name": "brick/math",
@@ -3166,16 +3166,16 @@
         },
         {
             "name": "s4mpp/admin-panel",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s4mpp/admin-panel.git",
-                "reference": "bd9dd1842c64bc314d10ba5b522691d80832ef1e"
+                "reference": "63d0ba8c913983ab75fdb00fd95e49b2704f5b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s4mpp/admin-panel/zipball/bd9dd1842c64bc314d10ba5b522691d80832ef1e",
-                "reference": "bd9dd1842c64bc314d10ba5b522691d80832ef1e",
+                "url": "https://api.github.com/repos/s4mpp/admin-panel/zipball/63d0ba8c913983ab75fdb00fd95e49b2704f5b4e",
+                "reference": "63d0ba8c913983ab75fdb00fd95e49b2704f5b4e",
                 "shasum": ""
             },
             "require": {
@@ -3183,7 +3183,6 @@
                 "livewire/livewire": "^2.0",
                 "php": "^8.1",
                 "s4mpp/element": "^1.0",
-                "s4mpp/input": "^1.0",
                 "s4mpp/laraguard": "^1.0"
             },
             "type": "library",
@@ -3202,29 +3201,29 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Samuel Pacheco",
+                    "name": "Samuel P.",
                     "email": "S4mpp.dev@gmail.com"
                 }
             ],
             "description": "Admin Panel for Laravel apps",
             "support": {
                 "issues": "https://github.com/s4mpp/admin-panel/issues",
-                "source": "https://github.com/s4mpp/admin-panel/tree/v1.2.1"
+                "source": "https://github.com/s4mpp/admin-panel/tree/v1.2.2"
             },
-            "time": "2023-09-02T15:23:42+00:00"
+            "time": "2023-09-04T01:57:18+00:00"
         },
         {
             "name": "s4mpp/element",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s4mpp/element.git",
-                "reference": "285baa4a55169ea454bcf98655ece22c5b4c59db"
+                "reference": "eb3963e443078426975ecd79ec95feaa36b914b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s4mpp/element/zipball/285baa4a55169ea454bcf98655ece22c5b4c59db",
-                "reference": "285baa4a55169ea454bcf98655ece22c5b4c59db",
+                "url": "https://api.github.com/repos/s4mpp/element/zipball/eb3963e443078426975ecd79ec95feaa36b914b0",
+                "reference": "eb3963e443078426975ecd79ec95feaa36b914b0",
                 "shasum": ""
             },
             "require": {
@@ -3247,16 +3246,16 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Samuel Pacheco",
+                    "name": "Samuel P.",
                     "email": "S4mpp.dev@gmail.com"
                 }
             ],
             "description": "View components for Laravel",
             "support": {
                 "issues": "https://github.com/s4mpp/element/issues",
-                "source": "https://github.com/s4mpp/element/tree/v1.0.8"
+                "source": "https://github.com/s4mpp/element/tree/v1.0.9"
             },
-            "time": "2023-08-31T22:16:29+00:00"
+            "time": "2023-09-02T19:07:34+00:00"
         },
         {
             "name": "s4mpp/format",
@@ -3307,62 +3306,17 @@
             "time": "2023-09-02T18:25:13+00:00"
         },
         {
-            "name": "s4mpp/input",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/s4mpp/input.git",
-                "reference": "bd334f74379fc3ea89a582e02cfaaef4f5496a5a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/s4mpp/input/zipball/bd334f74379fc3ea89a582e02cfaaef4f5496a5a",
-                "reference": "bd334f74379fc3ea89a582e02cfaaef4f5496a5a",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^10.10",
-                "php": "^8.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "S4mpp\\Input\\Providers\\InputServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "S4mpp\\Input\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Samuel Pacheco",
-                    "email": "S4mpp.dev@gmail.com"
-                }
-            ],
-            "description": "Input components for Laravel",
-            "support": {
-                "issues": "https://github.com/s4mpp/input/issues",
-                "source": "https://github.com/s4mpp/input/tree/v1.0.5"
-            },
-            "time": "2023-08-31T14:52:49+00:00"
-        },
-        {
             "name": "s4mpp/laragenius",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/s4mpp/laragenius.git",
-                "reference": "6530f34cf9ab84811e2794fa8487ed5e19cf7799"
+                "reference": "0dc5f0b648f078eadb7ecddf35917d120c8c510a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/s4mpp/laragenius/zipball/6530f34cf9ab84811e2794fa8487ed5e19cf7799",
-                "reference": "6530f34cf9ab84811e2794fa8487ed5e19cf7799",
+                "url": "https://api.github.com/repos/s4mpp/laragenius/zipball/0dc5f0b648f078eadb7ecddf35917d120c8c510a",
+                "reference": "0dc5f0b648f078eadb7ecddf35917d120c8c510a",
                 "shasum": ""
             },
             "require": {
@@ -3385,16 +3339,16 @@
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
-                    "name": "Samuel Pacheco",
+                    "name": "Samuel P.",
                     "email": "S4mpp.dev@gmail.com"
                 }
             ],
             "description": "Gerador de recursos para Laravel",
             "support": {
                 "issues": "https://github.com/s4mpp/laragenius/issues",
-                "source": "https://github.com/s4mpp/laragenius/tree/v1.0.8"
+                "source": "https://github.com/s4mpp/laragenius/tree/v1.0.9"
             },
-            "time": "2023-08-30T17:51:20+00:00"
+            "time": "2023-09-02T19:08:20+00:00"
         },
         {
             "name": "s4mpp/laraguard",
