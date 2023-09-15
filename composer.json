@@ -12,10 +12,10 @@
         "s4mpp/admin-panel": "^1.0",
         "s4mpp/element": "^1.0",
         "s4mpp/format": "^1.0",
-        "s4mpp/laragenius": "^1.0",
         "livewire/livewire": "^2.0"
     },
     "require-dev": {
+        "s4mpp/laragenius": "^1.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
