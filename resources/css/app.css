@@ -18,7 +18,7 @@
 
     .bg-primary
     {
-        @apply bg-blue-800 !important;
+        @apply bg-blue-600 !important;
     }
 
     .text-primary
