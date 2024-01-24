@@ -2,14 +2,14 @@
 
 namespace App\Providers;
 
-use S4mpp\AdminPanel\Navigation\Page;
 use Illuminate\Support\ServiceProvider;
+use S4mpp\AdminPanel\Factories\Navigation;
 use App\Http\Controllers\DashboardAdminController;
 
 class AdminServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        Page::create('Dashboard')->target([DashboardAdminController::class, 'index'])->slug('dashboard')->order(-1)->name('dashboard');
+        Navigation::item('Dashboard')->target([DashboardAdminController::class, 'index'])->route('dashboard')->setOrder(0);
     }
 }
