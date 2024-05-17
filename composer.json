@@ -1,5 +1,5 @@
 {
-    "name": "laravel/laravel-boilerplate",
+    "name": "s4mpp/laravel-boilerplate",
     "type": "project",
     "description": "The skeleton application for the Laravel 11 (modified).",
     "keywords": ["laravel", "framework"],
