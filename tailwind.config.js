@@ -14,9 +14,9 @@ export default {
     theme: {
       extend: {
         colors: {
-          'primary': colors.blue,
-          'secondary': colors.cyan,
-          'base': colors.gray,
+        'primary': colors.indigo,
+        'secondary': colors.blue,
+        'base': colors.neutral,
         }
       },
     },

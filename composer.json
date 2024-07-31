@@ -8,23 +8,25 @@
         "php": "^8.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "s4mpp/admin-panel": "v2.x-dev",
-        "s4mpp/laraguard": "v2.x-dev",
+        "s4mpp/admin-panel": "^2.0",
+        "s4mpp/laraguard": "^2.0",
         "s4mpp/element": "^2.0",
         "s4mpp/brstrings": "^1.0",
         "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
-        "larastan/larastan": "^2.9",
+        "barryvdh/laravel-debugbar": "^3.13",
         "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^2.9",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
         "laravel/telescope": "^5.0",
+        "lucascudo/laravel-pt-br-localization": "^2.2",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpunit/phpunit": "^10.5",
-        "spatie/laravel-ignition": "^2.4",
-        "s4mpp/laragenius": "v2.x-dev"
+        "s4mpp/laragenius": "v2.x-dev",
+        "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
         "psr-4": {
@@ -93,6 +95,7 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
+        "discard-changes" : true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
