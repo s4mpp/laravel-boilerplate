@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\Number;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -25,6 +27,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        if(app()->environment(['production', 'staging'])) {
+            URL::forceScheme('https');
+        }
+
+        Model::shouldBeStrict();
+
         Number::useLocale('pt-BR');
     }
 }

@@ -23,7 +23,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //TODO verificar guard (somente admin)
-        Gate::before(fn ($user, $ability) => ($user->id == env('SUPER_ADMIN_ID')) ? true : null);
+        Gate::before(fn ($user, $ability) => ( $user->getTable() == 'users' && $user->id == env('SUPER_ADMIN_ID')) ? true : null);
     }
 }
