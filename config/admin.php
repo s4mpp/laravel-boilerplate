@@ -3,6 +3,8 @@
 return [
 	'guard' => 'admin',
 
+	'prefix' => env('ADMIN_PREFIX'),
+
 	'logo' => [
 		'light' => 'images/logo-light.png',
 		'dark' => 'images/logo-dark.png'

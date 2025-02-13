@@ -8,14 +8,13 @@
         "php": "^8.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
-        "s4mpp/admin-panel": "^2.0",
-        "s4mpp/laraguard": "^2.0",
+        "s4mpp/admin-panel": "^3.0",
         "s4mpp/element": "^2.0",
         "s4mpp/brstrings": "^1.0",
-        "spatie/laravel-permission": "^6.4"
+        "spatie/laravel-permission": "^6.4",
+        "s4mpp/laravel-auth-suite": "^1.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.13",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^2.9",
         "laravel/pint": "^1.13",
@@ -25,7 +24,8 @@
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpunit/phpunit": "^10.5",
-        "s4mpp/laragenius": "^8.0",
+        "rector/rector": "^1.2",
+        "s4mpp/laragenius": "^2.0",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -47,7 +47,7 @@
         },
         {
             "type": "github",
-            "url": "https://github.com/s4mpp/laraguard"
+            "url": "https://github.com/s4mpp/laravel-auth-suite"
         },
         {
             "type": "github",
@@ -84,6 +84,14 @@
             "npm run build",
             "@php artisan optimize:clear",
             "@php artisan serve"
+        ],
+        "install-project": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan migrate --quiet",
+            "@php artisan laraguard:make-user --guard=admin",
+            "npm install",
+            "npm run build",
+            "@php artisan optimize:clear"
         ]
     },
     "extra": {
