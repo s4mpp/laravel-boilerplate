@@ -3,7 +3,7 @@
 return [
 	'guard' => 'admin',
 
-	'prefix' => env('ADMIN_PREFIX'),
+	'prefix' => env('ADMIN_PREFIX', 'painel'),
 
 	'logo' => [
 		'light' => 'images/logo-light.png',
@@ -14,4 +14,6 @@ return [
 		'css' => ['resources/css/app.css'],
 		'js' => ['resources/js/app.js']
 	],
+
+	'super_admin_id' => env('SUPER_ADMIN_ID'),
 ];

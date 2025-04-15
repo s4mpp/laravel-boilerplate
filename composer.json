@@ -21,6 +21,7 @@
         "laravel/sail": "^1.26",
         "laravel/telescope": "^5.0",
         "lucascudo/laravel-pt-br-localization": "^2.2",
+        "plannr/laravel-fast-refresh-database": "^1.2",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpunit/phpunit": "^10.5",
@@ -77,21 +78,29 @@
             "@php artisan key:generate --ansi",
             "@php artisan vendor:publish --tag=permission-migrations",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php -r \"file_exists('database/dbtest.sqlite') || touch('database/dbtest.sqlite');\"",
             "@php artisan telescope:install",
             "@php artisan migrate --graceful --ansi",
-            "@php artisan laraguard:make-user --guard=admin",
             "npm install",
             "npm run build",
+            "@php artisan admin:update-permissions",
             "@php artisan optimize:clear",
             "@php artisan serve"
         ],
         "install-project": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php -r \"file_exists('database/dbtest.sqlite') || touch('database/dbtest.sqlite');\"",
+            "@php artisan key:generate --ansi",
             "@php artisan migrate --quiet",
-            "@php artisan laraguard:make-user --guard=admin",
             "npm install",
             "npm run build",
-            "@php artisan optimize:clear"
+            "@php artisan optimize:clear",
+            "@php artisan serve"
+        ],
+        "lint": [
+            "vendor/bin/pint app",
+            "vendor/bin/rector"
         ]
     },
     "extra": {
