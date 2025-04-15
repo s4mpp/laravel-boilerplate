@@ -79,7 +79,6 @@
             "@php artisan vendor:publish --tag=permission-migrations",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php -r \"file_exists('database/dbtest.sqlite') || touch('database/dbtest.sqlite');\"",
-            "@php artisan telescope:install",
             "@php artisan migrate --graceful --ansi",
             "npm install",
             "npm run build",
