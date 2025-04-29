@@ -32,7 +32,7 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
-        Model::shouldBeStrict();
+        // Model::shouldBeStrict();
 
         Number::useLocale('pt-BR');
     }

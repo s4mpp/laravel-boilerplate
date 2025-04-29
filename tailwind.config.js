@@ -8,7 +8,6 @@ export default {
       "./resources/**/*.vue",
       "./vendor/s4mpp/admin-panel/views/**/*.blade.php",
       "./vendor/s4mpp/element/views/**/*.blade.php",
-      "./vendor/s4mpp/laraguard/views/**/*.blade.php",
     ],
     darkMode: 'selector',
     theme: {
