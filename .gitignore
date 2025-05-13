@@ -12,6 +12,7 @@
 .phpunit.result.cache
 coverage-result
 coverage-html
+coverage-result-vscode-extension
 Homestead.json
 Homestead.yaml
 auth.json

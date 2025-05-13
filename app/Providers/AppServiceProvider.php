@@ -8,9 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Telescope\TelescopeServiceProvider;
 
-/**
- * @codeCoverageIgnore
- */
 class AppServiceProvider extends ServiceProvider
 {
     /**

@@ -7,12 +7,13 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0",
+        "laravel/pulse": "^1.4",
         "laravel/tinker": "^2.9",
         "s4mpp/admin-panel": "^3.0",
-        "s4mpp/element": "^2.0",
         "s4mpp/brstrings": "^1.0",
-        "spatie/laravel-permission": "^6.4",
-        "s4mpp/laravel-auth-suite": "^1.0"
+        "s4mpp/element": "^2.0",
+        "s4mpp/laravel-auth-suite": "^1.0",
+        "spatie/laravel-permission": "^6.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

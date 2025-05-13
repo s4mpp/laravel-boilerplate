@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
 
-/**
- * @codeCoverageIgnore
- */
 class AuthServiceProvider extends ServiceProvider
 {
     /**
