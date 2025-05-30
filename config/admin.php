@@ -1,6 +1,9 @@
 <?php
 
 return [
+
+    'prefix' => 'painel',
+
 	'has_context' => false,
 
 	'logs' => false,
