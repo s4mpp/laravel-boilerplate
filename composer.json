@@ -84,9 +84,9 @@
             "composer update",
             "npm install",
             "npm run build",
+            "@php artisan optimize:clear",
             "@php artisan admin:update-permissions",
             "@php artisan admin:create-user",
-            "@php artisan optimize:clear",
             "@php artisan serve"
         ],
         "install-project": [
