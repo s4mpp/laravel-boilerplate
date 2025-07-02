@@ -81,15 +81,15 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php -r \"file_exists('database/dbtest.sqlite') || touch('database/dbtest.sqlite');\"",
             "@php artisan migrate --graceful --ansi",
-            "git init",
-            "git add .",
-            "git commit -m 'Initial commit'",
             "composer update",
             "npm install",
             "npm run build",
             "@php artisan optimize:clear",
             "@php artisan admin:update-permissions",
             "@php artisan admin:create-user",
+            "git init",
+            "git add .",
+            "git commit -m 'Initial commit'",
             "@php artisan serve"
         ],
         "install-project": [
